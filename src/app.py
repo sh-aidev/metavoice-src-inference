@@ -1,8 +1,8 @@
-from internal.server.pubsub import RedisPubSub
+from src.server.serve import Server
 
 class App:
     def __init__(self) -> None:
-        self.redis = RedisPubSub()
+        self.server = Server()
 
     def run(self):
-        self.redis.serve()
+        self.server.gradio_serve()

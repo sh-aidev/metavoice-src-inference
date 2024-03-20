@@ -2,8 +2,17 @@
 environment="prod"
 
 [server]
-redis_port = "6379"
+host = "localhost"
+port = 8080
 
+[paths]
+output_dir = "tts-data"
 
-[tts_model]
-model_name = "distil-whisper/distil-large-v2"
+[tts_model.whispertts]
+model_name = "collabora/whisperspeech:s2a-q4-tiny-en+pl.model" # collabora/whisperspeech:s2a-q4-base-en+pl.model or collabora/whisperspeech:s2a-q4-small-en+pl.model
+
+[tts_model.tortoisetts]
+model_name = ""
+
+[tts_model.metavoice]
+model_name = ""

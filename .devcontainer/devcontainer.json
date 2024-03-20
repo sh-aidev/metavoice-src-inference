@@ -11,11 +11,6 @@
             "type": "bind"
         },
         {
-            "source": "tts-data",
-            "target": "/tts-data",
-            "type": "volume"
-        },
-        {
             "source": "/tmp/.X11-unix",
             "target": "/tmp/.X11-unix",
             "type": "bind"

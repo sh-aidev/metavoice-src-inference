@@ -16,3 +16,4 @@ pyfiglet==1.0.2
 WhisperSpeech==0.8
 soundfile==0.12.1
 pydub==0.25.1
+gradio==4.21.0

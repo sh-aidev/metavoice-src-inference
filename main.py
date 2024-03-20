@@ -9,9 +9,9 @@ ANSI_YELLOW="\033[33m"      # Yellow text
 
 sys.stdout.write(ANSI_BOLD + ANSI_YELLOW)
 
-print("Inferencing with HuggingFace's Distil-Whisper Model:")
+print("Inferencing with WhisperTTS Model:")
 
-distil_whisper_art = pyfiglet.figlet_format("tts",  font="slant", justify="center", width=100)
+distil_whisper_art = pyfiglet.figlet_format("tts-inference",  font="slant")
 
 print(distil_whisper_art)
 

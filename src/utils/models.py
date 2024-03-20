@@ -4,20 +4,28 @@ class LoggerModel(BaseModel):
     environment: str
 
 class ServerModel(BaseModel):
-    redis_port: str
-    whisper_channel_name: str
+    host: str
+    port: int
 
-class STTModel(BaseModel):
+class PathModel(BaseModel):
+    output_dir: str
+
+class WhisperttsModel(BaseModel):
     model_name: str
 
-class MicrophoneModel(BaseModel):
-    mic_name: str
-    sample_rate: int
-    channels: int
-    width: int
+class TortoisettsModel(BaseModel):
+    model_name: str
+
+class MetavoiceModel(BaseModel):
+    model_name: str
+
+class TTSModel(BaseModel):
+    whispertts: WhisperttsModel
+    tortoisetts: TortoisettsModel
+    metavoice:MetavoiceModel
 
 class Model(BaseModel):
     logger: LoggerModel
     server: ServerModel
-    stt_model: STTModel
-    microphone: MicrophoneModel
+    paths: PathModel
+    tts_model: TTSModel
