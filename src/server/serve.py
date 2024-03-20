@@ -19,6 +19,7 @@ class Server:
 
     def gradio_serve(self) -> None:
         text = gr.Textbox(lines=3, label="Text")
+        
         # tts_model = gr.Dropdown(
         #     choices=["whisper-speech", "tortoise-tts", "metavoice-tts"],
         #     label="TTS Model",
